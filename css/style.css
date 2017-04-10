@@ -1,6 +1,10 @@
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;*/
 
+/********************
+**   BASIC SETUP   **
+*********************/
+
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +16,141 @@ html {
   color: #535453;
   font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
+  font-size: 20px;
   text-rendering: optimizeLegibility;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/**************************
+**  REUSABLE COMPONENTS  **
+**************************/
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section, footer {
+  padding: 80px 0;
+}
+
+
+/**************************
+**     HEADER SECTION    **
+**************************/
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(256, 256, 256, .8)  ,rgba(256, 256, 256, .5) 10%,  rgba(0, 0, 0, .3) 30%,  rgba(0, 0, 0, .3)),  url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.logo {
+  width:300px;
+  height: auto;
+  margin: 20px 0 0 200px
+}
+
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height: 100%;
+}
+
+.hero-text-box form {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.hero-text-box  input[type="email"]{
+  padding: 0.85em 1.5em;
+  width: 100%;
+  border-radius: 2em;
+  border: 2px solid #fff;
+  background: rgba(0, 0, 0, 0.4);
+  outline: none;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.hero-text-box  input::placeholder {
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-text-box  .btn-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #dd423a;
+  border: 2px solid #dd423a;
+  border-radius: 0 2em 2em 0;
+  height: 100%;
+  width: 30%;
+  outline: none;
+  text-align: left;
+}
+
+.hero-text-box  .btn-submit span {
+  position: relative;
+  color: white;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  padding-left: .5rem;
+  text-transform: uppercase;
+  line-height: .7rem;
+  width: 100%;
+}
+
+
+.hero-text-box .btn-submit span::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  content: url(../img/arrow.svg);
+  width: 37px;
+  height: auto;
+
+  display: inline-block;
+  line-height: 100%;
+  transform: translateY(-50%);
+
+  }
+
+
+.hero-text-box p {
+  font-size: .7rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+
 }
