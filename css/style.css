@@ -39,6 +39,10 @@ section, footer {
   padding: 80px 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
@@ -94,7 +98,8 @@ header {
 .logo {
   width: 300px;
   height: auto;
-  margin: 20px 0 0 200px
+  margin: 20px 0 0 200px;
+  display: inline-block;
 }
 
 
@@ -233,4 +238,50 @@ h2 {
 
 h3 {
   margin-bottom: 30px;
+}
+
+
+/**************************
+**   DOWNLOAD SECTION   **
+**************************/
+
+.download-section {
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.ipad-img  {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  max-width: 700px;
+}
+
+.box-right {
+  text-align: center;
+}
+
+p.download {
+  font-size: 1.7em;
+  text-align: center;
+  color: #4e455a;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #dd423a;
+  color: white;
+  text-decoration: none;
+  padding: 1.2em 3em;
+  border-radius: 6em;
+  font-size: 1.2em;
+  margin: 0 auto;
+  transition: all .25s;
+}
+.btn:hover {
+  background-color: #4e455a;
+
 }
