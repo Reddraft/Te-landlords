@@ -39,14 +39,51 @@ section, footer {
   padding: 80px 0;
 }
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5em;
+}
+
+h2 {
+  color: #dd423a;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #000;
+}
+
+h5 {
+  font-size: .7rem;
+  color: #fff;
+}
+
+p {
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+
 
 /**************************
-**     HEADER SECTION    **
+**    HEADER SECTION    **
 **************************/
 
 header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(256, 256, 256, .8)  ,rgba(256, 256, 256, .5) 10%,  rgba(0, 0, 0, .3) 30%,  rgba(0, 0, 0, .3)),  url("../img/hero-bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(256, 256, 256, .8)  ,rgba(256, 256, 256, .5) 10%,  rgba(0, 0, 0, .4) 40%,  rgba(0, 0, 0, .6)),  url("../img/hero-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   top: 0;
@@ -55,7 +92,7 @@ header {
 }
 
 .logo {
-  width:300px;
+  width: 300px;
   height: auto;
   margin: 20px 0 0 200px
 }
@@ -65,24 +102,24 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 1200px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+
 }
 
 .hero-text-box h1 {
-  margin: 0;
   margin-bottom: 60px;
-  font-size: 3.5em;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   line-height: 100%;
 }
 
 .hero-text-box form {
   position: relative;
-  margin-bottom: 20px;
+  height: 60px;
+  width: 55%;
+  margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .hero-text-box  input[type="email"]{
@@ -95,6 +132,7 @@ header {
   font-weight: 300;
   color: #fff;
   letter-spacing: 1px;
+  height: 100%;
 }
 
 .hero-text-box  input::placeholder {
@@ -108,7 +146,7 @@ header {
 .hero-text-box  .btn-submit {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1px;
   background-color: #dd423a;
   border: 2px solid #dd423a;
   border-radius: 0 2em 2em 0;
@@ -116,6 +154,13 @@ header {
   width: 30%;
   outline: none;
   text-align: left;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+.hero-text-box  .btn-submit:hover {
+  background-color: #40394a;
+  border: 2px solid #40394a;
 }
 
 .hero-text-box  .btn-submit span {
@@ -125,32 +170,67 @@ header {
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
-  padding-left: .5rem;
+  padding-left: 1rem;
   text-transform: uppercase;
   line-height: .7rem;
   width: 100%;
+  transition: letter-spacing .25s;
+}
+.hero-text-box  .btn-submit:hover span {
+  letter-spacing: 2px;
 }
 
 
 .hero-text-box .btn-submit span::after {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 30px;
   content: url(../img/arrow.svg);
   width: 37px;
   height: auto;
-
   display: inline-block;
   line-height: 100%;
   transform: translateY(-50%);
+  transition: all .25s;
+}
 
-  }
+.hero-text-box .btn-submit:hover span::after {
+  right: 20px;
+}
 
 
-.hero-text-box p {
-  font-size: .7rem;
+.hero-text-box h5 {
   text-align: center;
-  color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
 
+
+/**************************
+**    WHY SECTION    **
+**************************/
+
+.why-section {
+  padding-bottom: 160px;
+}
+
+h2 {
+  margin-bottom: 80px;
+}
+
+.box {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.why-icon {
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.why-icon path {
+  fill: #dd423a;
+}
+
+h3 {
+  margin-bottom: 30px;
 }
