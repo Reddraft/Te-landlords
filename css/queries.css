@@ -1,0 +1,134 @@
+/****************************
+        Max Width 1200px
+****************************/
+
+/* laptops */
+@media only screen and (max-width: 1260px) {
+
+  html {font-size: 18px;}
+  .hero-text-box {width: 90%;}
+  .hero-text-box form { width: 70%; }
+  .ipad-img {  width: 52%;}
+
+}
+
+/* small tablets to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .row{width: 90%}
+
+  .logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+
+  h1 {font-size: 4em;}
+
+  .hero-text-box form { width: 90%; }
+
+  h2 { margin-bottom: 40px;}
+  .box {width: 100%;}
+
+  .download-section { padding-top: 250px;}
+
+
+  .ipad-img {
+    top: -130px;
+    left: 50%;
+    width: 65%;
+    transform: translateX(-50%);
+  }
+
+  .box-right {
+    width: 100%;
+  }
+
+}
+
+/* small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+  h1 {  font-size: 3em; }
+
+  .hero-text-box form { height: 100%; }
+
+  .hero-text-box input[type="email"] {  text-align: center; margin-bottom: 10px; }
+
+  .hero-text-box .btn-submit {
+    position: static;
+    width: 100%;
+    border-radius: 2em;
+    height: 60px;
+    text-align: center;
+    display: block;
+  }
+
+  .hero-text-box .btn-submit span {
+    padding: 0;
+    font-size: 1em;
+  }
+
+  .box { margin-bottom: 40px; }
+
+  .ipad-img { width: 100%; }
+
+}
+
+/* small phones to small tablets: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+
+  header {
+    background-attachment: scroll;
+    background-position: 30% 40%;
+  }
+
+  p { font-size: 18px;}
+
+  .logo {
+    margin-top: 20px;
+    width: 250px;  }
+
+  .hero-text-box { top: 60%; }
+
+  h1 {  font-size: 2em; }
+
+  .download-section { padding-top: 150px; }
+
+  .btn { padding: 1em 2em; }
+
+  footer {
+    padding: 40px 0;
+    background-size: cover;
+    background-position: 22% 0px;
+
+    }
+  }
+
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 767px)
+  and (orientation : landscape) {
+
+    header {height: 100vw;}
+    h1 { font-size: 3.5em;}
+    .hero-text-box { top: 50vw; }
+
+    .ipad-img {
+      width: 80%;
+      top: -170px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    footer {
+      background-position: 50% 0px;
+    }
+
+  }
