@@ -87,6 +87,7 @@ p {
 
 header {
   height: 100vh;
+  background-image: -webkit-linear-gradient(top, rgba(256, 256, 256, .8)  ,rgba(256, 256, 256, .5) 10%,  rgba(0, 0, 0, .4) 40%,  rgba(0, 0, 0, .6)),  url("../img/hero-bg.jpg");
   background-image: linear-gradient(to bottom, rgba(256, 256, 256, .8)  ,rgba(256, 256, 256, .5) 10%,  rgba(0, 0, 0, .4) 40%,  rgba(0, 0, 0, .6)),  url("../img/hero-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -141,6 +142,30 @@ header {
   height: 100%;
 }
 
+.hero-text-box  input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-text-box  input::-moz-placeholder {
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-text-box  input:-ms-input-placeholder {
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .hero-text-box  input::placeholder {
   color: #fff;
   font-size: .7rem;
@@ -160,8 +185,10 @@ header {
   width: 30%;
   outline: none;
   text-align: left;
-  transition: all .25s;
   cursor: pointer;
+  -webkit-transition: all .25s;
+        transition: all .25s;
+
 }
 
 .hero-text-box  .btn-submit:hover {
@@ -180,7 +207,8 @@ header {
   text-transform: uppercase;
   line-height: .7rem;
   width: 100%;
-  transition: letter-spacing .25s;
+  -webkit-transition: letter-spacing .25s;
+          transition: letter-spacing .25s;
 }
 .hero-text-box  .btn-submit:hover span {
   letter-spacing: 2px;
@@ -196,8 +224,10 @@ header {
   height: auto;
   display: inline-block;
   line-height: 100%;
-  transform: translateY(-50%);
-  transition: all .25s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .25s;
+          transition: all .25s;
 }
 
 .hero-text-box .btn-submit:hover span::after {
@@ -220,7 +250,8 @@ header {
   bottom: 50px;
   left: 50%;
   z-index: 10;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .mouse-icon .scroll {
@@ -234,12 +265,33 @@ header {
 }
 
 .mouse-icon .scroll {
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: scrolling;
-    animation-play-state: running;
-    animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: scrolling;
+            animation-name: scrolling;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+      opacity: 0;
+      top: 5px;
+  }
+  30% {
+      opacity: 1;
+      top: 10px;
+  }
+  100% {
+      opacity: 0;
+      top: 25px;
+  }
 }
 
 @keyframes scrolling {
@@ -334,6 +386,7 @@ p.download {
   font-size: 1.2em;
   margin: 0 auto;
   letter-spacing: 1px;
+  -webkit-transition: all .25s;
   transition: all .25s;
 }
 
@@ -361,6 +414,7 @@ footer {
 }
 .secondary-logo > path {
   fill: #41394b;
+  -webkit-transition: fill .25s;
   transition: fill .25s;
 }
 .secondary-logo:hover > path {
@@ -392,6 +446,7 @@ ul.social li:last-child a .social-icon {
 
 ul.social li a .social-icon > path {
   fill: #8e8d8f;
+  -webkit-transition: fill .25s;
   transition: fill .25s;
 }
 ul.social li a:hover .social-icon > path {
