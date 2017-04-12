@@ -85,7 +85,7 @@
 and (min-device-width : 320px)
 and (max-device-width : 767px) {
 
-  .row {width: 100%;}
+  .row {width: 95%;}
   header {
     background-attachment: scroll;
     background-position: 30% 40%;
@@ -127,7 +127,7 @@ and (max-device-width : 767px) {
   and (orientation : landscape) {
 
     header {height: 100vw;}
-    h1 { font-size: 3.5em;}
+    .hero-text-box h1 { font-size: 3.5em;}
     .hero-text-box { top: 50vw; }
     .box-left{ height: 200px; }
     .ipad-img {
