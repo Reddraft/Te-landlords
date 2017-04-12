@@ -36,7 +36,7 @@ $(document).ready(function() {
   $('.why-section').waypoint(function() {
       $('.js-wp-animate-why-heading').addClass('animated fadeInDown');
   }, {
-    offset: '300px;'
+    offset: '500px;'
   });
 
   $('.why-section').waypoint(function() {
@@ -44,7 +44,7 @@ $(document).ready(function() {
       $('.js-wp-animate-reason-2').addClass('animated fadeInUp');
       $('.js-wp-animate-reason-3').addClass('animated fadeInUp');
   }, {
-    offset: '250px;'
+    offset: '300px;'
   });
 
   // download section animations
