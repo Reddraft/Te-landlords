@@ -4,6 +4,27 @@ $(document).ready(function() {
   *** ANIMATIONS ON SCROLLING **
   *******************************/
 
+  var $input = $(':input');
+  var $btn = $('.btn-submit');
+
+  $input.focus(function() {
+    $(this).removeAttr('placeholder');
+  })
+
+  $input.blur(function() {
+    $(this).val(' ');
+    $(this).attr('placeholder', 'Enter Email' );
+  })
+
+  $btn.click(function() {
+    $input.val(' ');
+    $input.attr('placeholder', 'Enter Email' );
+  })
+
+  /******************************
+  *** ANIMATIONS ON SCROLLING **
+  *******************************/
+
   // header animations
   $('.js-wp-animate-logo').addClass('animated fadeInDown');
   $('.js-wp-animate-heading').addClass('animated fadeInUp');

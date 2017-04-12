@@ -137,9 +137,20 @@ header {
   background: rgba(0, 0, 0, 0.4);
   outline: none;
   font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
   color: #fff;
   letter-spacing: 1px;
   height: 100%;
+  text-transform: uppercase;
+  -webkit-transition: all .25s;
+          transition: all .25s;
+}
+
+
+.hero-text-box input[type="email"]:focus {
+  background: #40394a;
+  border-color: #dd423a;
+  outline: none;
 }
 
 .hero-text-box  input::-webkit-input-placeholder {
@@ -148,6 +159,7 @@ header {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .hero-text-box  input::-moz-placeholder {
@@ -174,6 +186,9 @@ header {
   text-transform: uppercase;
 }
 
+
+
+
 .hero-text-box  .btn-submit {
   position: absolute;
   top: 0;
@@ -187,7 +202,7 @@ header {
   text-align: left;
   cursor: pointer;
   -webkit-transition: all .25s;
-        transition: all .25s;
+          transition: all .25s;
 
 }
 
