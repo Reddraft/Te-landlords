@@ -93,6 +93,7 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
+  position: relative;
 }
 
 .logo {
@@ -209,6 +210,52 @@ header {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
+.mouse-icon {
+  border: 2px solid #fff;
+  border-radius: 16px;
+  display: block;
+  height: 50px;
+  width: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.mouse-icon .scroll {
+    background: #fff;
+    border-radius: 10px;
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 4px;
+    width: 4px;
+}
+
+.mouse-icon .scroll {
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: scrolling;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+@keyframes scrolling {
+  0% {
+      opacity: 0;
+      top: 5px;
+  }
+  30% {
+      opacity: 1;
+      top: 10px;
+  }
+  100% {
+      opacity: 0;
+      top: 25px;
+  }
+}
 
 /**************************
 **    WHY SECTION    **
@@ -247,20 +294,26 @@ h3 {
 
 .download-section {
   background-color: #eaeaea;
+  padding: 0;
+}
+
+.box-left {
   position: relative;
-  padding: 60px 0;
+  height: 350px;
 }
 
 .ipad-img  {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   max-width: 700px;
 }
 
+
 .box-right {
   text-align: center;
+  padding: 60px 0;
 }
 
 p.download {

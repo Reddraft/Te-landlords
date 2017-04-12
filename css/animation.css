@@ -1,0 +1,152 @@
+/**** HEADER ANIMATIONS ******/
+
+.js-wp-animate-logo {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.js-wp-animate-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.js-wp-animate-form {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.js-wp-animate-subheading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.js-wp-animate-scroll {
+  opacity: 0;
+}
+.js-wp-animate-scroll.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-scroll {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+/**** WHY SECTION ANIMATIONS ******/
+
+.js-wp-animate-why-heading,
+.js-wp-animate-reason-1,
+.js-wp-animate-reason-2,
+.js-wp-animate-reason-3 {
+  opacity: 0;
+}
+
+.js-wp-animate-heading.animated,
+.js-wp-animate-reason-1.animated,
+.js-wp-animate-reason-2.animated,
+.js-wp-animate-reason-3.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-why-heading {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-reason-1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.js-wp-animate-reason-2 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.js-wp-animate-reason-3 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+
+/**** WHY SECTION ANIMATIONS ******/
+
+.js-wp-animate-ipad,
+.js-wp-animate-cta,
+.js-wp-animate-download-btn   {
+  opacity: 0;
+}
+
+.js-wp-animate-ipad.animated,
+.js-wp-animate-cta.animated,
+.js-wp-animate-download-btn.animated  {
+  opacity: 1;
+}
+
+.js-wp-animate-ipad {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-cta {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+.js-wp-animate-download-btn {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+/**** FOOTER ANIMATIONS ******/
+
+.js-wp-animate-secondary-logo,
+.js-wp-animate-social-icons,
+.js-wp-animate-small {
+  opacity: 0;
+}
+
+.js-wp-animate-secondary-logo.animated,
+.js-wp-animate-social-icons.animated,
+.js-wp-animate-small.animated {
+  opacity: 1;
+}
+
+.js-wp-animate-secondary-logo {
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+.js-wp-animate-social-icons {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+.js-wp-animate-small  {
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
