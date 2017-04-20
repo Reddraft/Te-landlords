@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+
+  /******************************
+  ** ANIMATIONS TO RUN ON IPAD **
+  *******************************/
+
+
+  var isiPad = /ipad/i.test(navigator.userAgent.toLowerCase());
+  if (isiPad)
+  {
+    // download section animations
+    $('.download-section').waypoint(function() {
+        $('.js-wp-animate-ipad').addClass('animated slideInLeft');
+        $('.js-wp-animate-cta').addClass('animated fadeInDown');
+        $('.js-wp-animate-download-btn').addClass('animated fadeInUp');
+
+    }, {
+      offset: '200px;'
+    });
+  }
+
   /******************************
   *** ANIMATIONS ON SCROLLING **
   *******************************/
